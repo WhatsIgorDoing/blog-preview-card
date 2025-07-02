@@ -70,8 +70,8 @@ body{
     width: 100%;
     max-width: 38.4rem;
     height: auto;
-    min-height: 47.4rem;
-    max-height: 47.4rem; 
+    min-height: 52.2rem;
+    max-height: 52.2rem;
     padding: var(--spacing-300);
    
     
@@ -97,10 +97,6 @@ body{
     object-fit: contain;
 }
 
-.card p{
-    margin-top: var(--spacing-150);
-}
-
 .category{
     display: flex;
     align-items: center;
@@ -108,7 +104,7 @@ body{
     background: var(--color-background);
     padding: var(--spacing-50) var(--spacing-150);
     border-radius: 0.4rem;
-    padding-top: var(spacing-300);
+    margin-top: var(--spacing-300);
 
     font-family: var(--font-Figtree-extra-bold);
     font-size: var(--font-size-secondary-body);
@@ -124,6 +120,7 @@ body{
     font-weight: 500;
     line-height: var(--font-line-height);
     letter-spacing: var(--font-letter-spacing-title);
+    margin-top: var(--spacing-150);
 }
 
 .card h1{
@@ -144,12 +141,15 @@ body{
     font-weight: 500;
     line-height: var(--font-line-height);
     letter-spacing: var(--font-letter-spacing-title);
+    margin-top: var(--spacing-150);
 }
 
 .author{
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+    justify-content: center;
+    margin-top: var(--spacing-300);
 
 }
 .author-image{
@@ -165,5 +165,5 @@ body{
     font-weight: 800;
     line-height: var(--font-line-height);
     letter-spacing: var(--font-letter-spacing-title);
-    padding: var(--spacing-150);
+    padding-left: var(--spacing-150);
 }
