@@ -44,14 +44,16 @@ body{
     /* Layout  & Positioning */
     display: grid;
     place-items: center;
+    min-height: 100vh;
 
     /* Box Model */
-    min-height: 100vh;
+    
     padding: var(--spacing-300);
 
     /* Visual */
-    font-family: 'Figtree', sans-serif;
     background-color: var(--color-background);
+    font-family: 'Figtree', sans-serif;
+    
 
 }
 
@@ -61,12 +63,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
 
 
     /* Box Model */
     width: 100%;
     max-width: 38.4rem;
-    height: auto; 
+    height: auto;
+    min-height: 47.4rem;
+    max-height: 47.4rem; 
     padding: var(--spacing-300);
    
     
@@ -77,3 +82,22 @@ body{
     box-shadow: 0.8rem 0.8rem 0rem 0rem var(--color-black);
 
 }
+
+.illustration{
+    /* Layout  & Positioning */
+
+
+    /* Box Model */
+    width: 100%;
+    max-width: 36.3rem;
+    height: auto;
+    border-radius: 1.0rem;
+
+    /* Visual */
+    object-fit: contain;
+}
+
+p{
+    margin-top: 1.2rem;
+}
+
