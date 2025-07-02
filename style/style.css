@@ -83,8 +83,6 @@ body{
     width: 100%;
     max-width: 38.4rem;
     height: auto;
-    min-height: 52.2rem;
-    max-height: 52.2rem;
     padding: var(--spacing-300);
    
     
@@ -102,7 +100,6 @@ body{
 
     /* Box Model */
     width: 100%;
-    max-width: 36.3rem;
     height: auto;
     border-radius: 1.0rem;
 
@@ -119,7 +116,6 @@ body{
     border-radius: 0.4rem;
     margin-top: var(--spacing-300);
 
-    font-family: 'Figtree';
     font-size: var(--font-size-secondary-body);
     font-weight: 800;
     letter-spacing: var(--font-letter-spacing-title);
@@ -128,7 +124,6 @@ body{
 
 .date{
     color: var(--color-text-primary);
-    font-family: 'Figtree';
     font-size: var(--font-size-secondary-body);
     font-weight: 500;
     line-height: var(--font-line-height);
@@ -138,7 +133,6 @@ body{
 
 .card h1{
     color: var(--color-text-primary);
-    font-family: 'Figtree';
     font-size: var(--font-size-title);
     font-style: normal;
     font-weight: 800;
@@ -147,9 +141,13 @@ body{
     letter-spacing: var(--font-letter-spacing-title);
 }
 
+.card h1:hover{
+    color: var(--color-title-hover);
+    cursor: pointer;
+}
+
 .description{
     color: var(--color-text-secondary);
-    font-family: 'Figtree';
     font-size: var(--font-size-primary-body);
     font-weight: 500;
     line-height: var(--font-line-height);
@@ -163,6 +161,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: var(--spacing-300);
+    column-gap: var(--spacing-150);
 
 }
 .author-image{
@@ -173,10 +172,9 @@ body{
 }
 .author-name{
     color: var(--color-text-primary);
-    font-family: 'Figtree';
     font-size: var(--font-size-secondary-body);
     font-weight: 800;
     line-height: var(--font-line-height);
     letter-spacing: var(--font-letter-spacing-title);
-    padding-left: var(--spacing-150);
+
 }
