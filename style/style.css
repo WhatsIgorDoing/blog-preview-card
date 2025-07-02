@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Figtree'; 
+    src: url('../assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800; 
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'Figtree'; 
+    src: url('../assets/fonts/static/Figtree-Medium.ttf') format('truetype');
+    font-weight: 500; 
+    font-display: swap;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,14 +22,13 @@ html{
     font-size: 62.5%;
 }
 
+
+
 :root{
     --color-yellow:#F4D04E;
     --color-black:#111111;
     --color-grey:#6B6B6B;
     --color-white:#FFFFFF;
-
-    --font-Figtree-extra-bold:./assets/fonts//static/Figtree-ExtraBold.ttf;
-    --font-Figtree-medium:./assets/fonts//static/Figtree-Medium.ttf;
 
     --color-background:var(--color-yellow);
     --color-surface-card:var(--color-white);
@@ -52,9 +65,9 @@ body{
 
     /* Visual */
     background-color: var(--color-background);
-    font-family: 'Figtree', sans-serif;
+    font-family: 'Figtree';
+    font-weight: 500;
     
-
 }
 
 .card{
@@ -106,7 +119,7 @@ body{
     border-radius: 0.4rem;
     margin-top: var(--spacing-300);
 
-    font-family: var(--font-Figtree-extra-bold);
+    font-family: 'Figtree';
     font-size: var(--font-size-secondary-body);
     font-weight: 800;
     letter-spacing: var(--font-letter-spacing-title);
@@ -115,7 +128,7 @@ body{
 
 .date{
     color: var(--color-text-primary);
-    font-family: var(--font-Figtree-medium);
+    font-family: 'Figtree';
     font-size: var(--font-size-secondary-body);
     font-weight: 500;
     line-height: var(--font-line-height);
@@ -125,7 +138,7 @@ body{
 
 .card h1{
     color: var(--color-text-primary);
-    font-family: var(--font-Figtree-extra-bold);
+    font-family: 'Figtree';
     font-size: var(--font-size-title);
     font-style: normal;
     font-weight: 800;
@@ -136,7 +149,7 @@ body{
 
 .description{
     color: var(--color-text-secondary);
-    font-family: var(--font-Figtree-medium);
+    font-family: 'Figtree';
     font-size: var(--font-size-primary-body);
     font-weight: 500;
     line-height: var(--font-line-height);
@@ -160,7 +173,7 @@ body{
 }
 .author-name{
     color: var(--color-text-primary);
-    font-family: var(--font-Figtree-extra-bold);
+    font-family: 'Figtree';
     font-size: var(--font-size-secondary-body);
     font-weight: 800;
     line-height: var(--font-line-height);
