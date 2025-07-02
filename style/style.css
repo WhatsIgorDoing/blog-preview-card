@@ -22,123 +22,126 @@ html{
     font-size: 62.5%;
 }
 
-
-
 :root{
-    --color-yellow:#F4D04E;
-    --color-black:#111111;
-    --color-grey:#6B6B6B;
-    --color-white:#FFFFFF;
+    /* Colors */
+    --color-yellow: #F4D04E;
+    --color-black: #111111;
+    --color-grey: #6B6B6B;
+    --color-white: #FFFFFF;
 
-    --color-background:var(--color-yellow);
-    --color-surface-card:var(--color-white);
-    --color-title-hover:var(--color-yellow);
-    --color-border-card:var(--color-grey);
-    --color-text-primary:var(--color-black);
-    --color-text-secondary:var(--color-grey);
+    /* Semantic Colors */
+    --color-background: var(--color-yellow);
+    --color-surface-card: var(--color-white);
+    --color-title-hover: var(--color-yellow);
+    --color-border-card: var(--color-grey);
+    --color-text-primary: var(--color-black);
+    --color-text-secondary: var(--color-grey);
 
-    --font-size-title:2.4rem;
-    --font-size-primary-body:1.6rem;
-    --font-size-secondary-body:1.4rem;
+    /* Font Sizes */
+    --font-size-title: 2.4rem;
+    --font-size-primary-body: 1.6rem;
+    --font-size-secondary-body: 1.4rem;
 
-    --font-line-height:150%;
+    /* Font Properties */
+    --font-line-height: 150%;
+    --font-letter-spacing-title: 0rem;
 
-    --font-letter-spacing-title:0rem;
-
-    --spacing-300:2.4rem;
-    --spacing-150:1.2rem;
-    --spacing-100:0.8rem;
-    --spacing-50:0.4rem;
-
+    /* Spacing */
+    --spacing-300: 2.4rem;
+    --spacing-150: 1.2rem;
+    --spacing-100: 0.8rem;
+    --spacing-50: 0.4rem;
 }
 
 body{
-
-    /* Layout  & Positioning */
+    /* Layout & Positioning */
     display: grid;
     place-items: center;
     min-height: 100vh;
 
     /* Box Model */
-    
     padding: var(--spacing-300);
 
-    /* Visual */
-    background-color: var(--color-background);
-    font-family: 'Figtree';
+    /* Typography */
+    font-family: 'Figtree', sans-serif; /* Adicionado fallback */
     font-weight: 500;
     
+    /* Visual */
+    background-color: var(--color-background);
 }
 
 .card{
-
-    /* Layout  & Positioning */
+    /* Layout & Positioning */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-
-
+    
     /* Box Model */
     width: 100%;
     max-width: 38.4rem;
     height: auto;
     padding: var(--spacing-300);
-   
+    border: 1px solid var(--color-border-card);
     
     /* Visual */
     background-color: var(--color-surface-card);
     border-radius: 2.0rem;
-    border: 1px solid var(--color-border-card);
     box-shadow: 0.8rem 0.8rem 0rem 0rem var(--color-black);
-
 }
 
 .illustration{
-    /* Layout  & Positioning */
-
-
     /* Box Model */
     width: 100%;
     height: auto;
-    border-radius: 1.0rem;
-
+    
     /* Visual */
     object-fit: contain;
+    border-radius: 1.0rem;
 }
 
 .category{
+    /* Layout & Positioning */
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-background);
-    padding: var(--spacing-50) var(--spacing-150);
-    border-radius: 0.4rem;
     margin-top: var(--spacing-300);
 
+    /* Box Model */
+    padding: var(--spacing-50) var(--spacing-150);
+    
+    /* Typography */
     font-size: var(--font-size-secondary-body);
     font-weight: 800;
     letter-spacing: var(--font-letter-spacing-title);
 
+    /* Visual */
+    background: var(--color-background);
+    border-radius: 0.4rem;
 }
 
 .date{
+    /* Box Model */
+    margin-top: var(--spacing-150);
+
+    /* Typography */
     color: var(--color-text-primary);
     font-size: var(--font-size-secondary-body);
     font-weight: 500;
     line-height: var(--font-line-height);
     letter-spacing: var(--font-letter-spacing-title);
-    margin-top: var(--spacing-150);
 }
 
 .card h1{
+    /* Box Model */
+    margin-top: var(--spacing-150);
+
+    /* Typography */
     color: var(--color-text-primary);
     font-size: var(--font-size-title);
-    font-style: normal;
     font-weight: 800;
-    margin-top: var(--spacing-150);
     line-height: var(--font-line-height);
     letter-spacing: var(--font-letter-spacing-title);
+    font-style: normal;
 }
 
 .card h1:hover{
@@ -147,34 +150,40 @@ body{
 }
 
 .description{
+    /* Box Model */
+    margin-top: var(--spacing-150);
+
+    /* Typography */
     color: var(--color-text-secondary);
     font-size: var(--font-size-primary-body);
     font-weight: 500;
     line-height: var(--font-line-height);
     letter-spacing: var(--font-letter-spacing-title);
-    margin-top: var(--spacing-150);
 }
 
 .author{
+    /* Layout & Positioning */
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: center;
-    margin-top: var(--spacing-300);
     column-gap: var(--spacing-150);
-
+    margin-top: var(--spacing-300);
 }
+
 .author-image{
+    /* Box Model */
+    width: 3.2rem;
+    height: 3.2rem;
 
-   border-radius: 20px;
-   width: 3.2rem;
-   height: 3.2rem;
+    /* Visual */
+    border-radius: 20px;
 }
+
 .author-name{
+    /* Typography */
     color: var(--color-text-primary);
     font-size: var(--font-size-secondary-body);
     font-weight: 800;
     line-height: var(--font-line-height);
     letter-spacing: var(--font-letter-spacing-title);
-
 }
