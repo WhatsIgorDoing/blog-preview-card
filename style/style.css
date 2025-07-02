@@ -9,5 +9,71 @@ html{
 }
 
 :root{
+    --color-yellow:#F4D04E;
+    --color-black:#111111;
+    --color-grey:#6B6B6B;
+    --color-white:#FFFFFF;
+
+    --font-Figtree-extra-bold:./assets/fonts//static/Figtree-ExtraBold.ttf;
+    --font-Figtree-medium:./assets/fonts//static/Figtree-Medium.ttf;
+
+    --color-background:var(--color-yellow);
+    --color-surface-card:var(--color-white);
+    --color-title-hover:var(--color-yellow);
+    --color-border-card:var(--color-grey);
+    --color-text-primary:var(--color-black);
+    --color-text-secondary:var(--color-grey);
+
+    --font-size-title:2.4rem;
+    --font-size-primary-body:1.6rem;
+    --font-size-secondary-body:1.4rem;
+
+    --font-line-height:150%;
+
+    --font-letter-spacing-title:0rem;
+
+    --spacing-300:2.4rem;
+    --spacing-150:1.2rem;
+    --spacing-100:0.8rem;
+    --spacing-50:0.4rem;
+
+}
+
+body{
+
+    /* Layout  & Positioning */
+    display: grid;
+    place-items: center;
+
+    /* Box Model */
+    min-height: 100vh;
+    padding: var(--spacing-300);
+
+    /* Visual */
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--color-background);
+
+}
+
+.card{
+
+    /* Layout  & Positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    /* Box Model */
+    width: 100%;
+    max-width: 38.4rem;
+    height: auto; 
+    padding: var(--spacing-300);
+   
     
+    /* Visual */
+    background-color: var(--color-surface-card);
+    border-radius: 2.0rem;
+    border: 1px solid var(--color-border-card);
+    box-shadow: 0.8rem 0.8rem 0rem 0rem var(--color-black);
+
 }
