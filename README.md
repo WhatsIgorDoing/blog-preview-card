@@ -1,7 +1,6 @@
 # Blog Preview Card
 
 ![Project Status](https://img.shields.io/badge/status-complete-brightgreen)
-[![Deploy](https://img.shields.io/badge/live--demo-brightgreen?style=for-the-badge)](https://blog-preview-card-two-iota.vercel.app/)
 
 > This is a solution to the "Blog preview card" challenge on [Frontend Mentor](https://www.frontendmentor.io/). The goal was to build a component that is visually as close as possible to the proposed design, practicing fundamental HTML and CSS skills.
 
