@@ -38,8 +38,8 @@ html{
     --color-text-secondary: var(--color-grey);
 
     /* Font Sizes */
-    --font-size-title: 2.4rem;
-    --font-size-primary-body: 1.6rem;
+    --font-size-title: clamp(2.0rem, 1.859rem + 0.376vw, 2.4rem);
+    --font-size-primary-body: clamp(1.4rem, 1.33rem + 0.188vw, 1.6rem);
     --font-size-secondary-body: 1.4rem;
 
     /* Font Properties */
@@ -77,8 +77,10 @@ body{
     align-items: flex-start;
     
     /* Box Model */
-    width: 100%;
-    max-width: 38.4rem;
+    width: min(100%, 38.4rem);
+    margin-inline:auto;
+    
+    
     height: auto;
     padding: var(--spacing-300);
     border: 1px solid var(--color-border-card);
